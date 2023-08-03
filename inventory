@@ -1,0 +1,8 @@
+[app]
+target1 ansible_host=192.168.33.10 ansible_ssh_private_key_file=/Users/vimalmenon/code/python/learn-ansible/.vagrant/machines/node-1/virtualbox/private_key
+target2 ansible_host=192.168.33.11 ansible_ssh_private_key_file=/Users/vimalmenon/code/python/learn-ansible/.vagrant/machines/node-2/virtualbox/private_key
+target3 ansible_host=192.168.33.12 ansible_ssh_private_key_file=/Users/vimalmenon/code/python/learn-ansible/.vagrant/machines/node-3/virtualbox/private_key
+
+[app:vars]
+ansible_port=22
+ansible_user=vagrant
