@@ -61,3 +61,8 @@ ansible app -i ./inventory -m setup
 ```sh
 ssh -o StrictHostKeyChecking=no vagrant@192.168.33.10 -i ${key}
 ```
+
+### Running Simple Playbook file in example Playbook1
+```sh
+ansible-playbook ./examples/Playbook1/simple.play.yml -i inventory -v
+```
