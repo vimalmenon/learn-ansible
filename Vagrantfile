@@ -3,19 +3,19 @@ nodes = [
   {
     "value" => "node-1",
     "hostname" => "app1.test",
-    "box" => "ubuntu/jammy64",
+    "box" => "centos/7",
     "ip" => "192.168.33.10"
   },
   {
     "value" => "node-2",
     "hostname" => "app2.test",
-    "box" => "ubuntu/jammy64",
+    "box" => "centos/7",
     "ip" => "192.168.33.11"
   },
   {
     "value" => "node-3",
     "hostname" => "app3.test",
-    "box" => "ubuntu/jammy64",
+    "box" => "centos/7",
     "ip" => "192.168.33.12"
   }
 ]
