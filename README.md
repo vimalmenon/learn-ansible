@@ -6,7 +6,7 @@
   - Vagrant
 
 ### Create VirtualEnv
-```
+```sh
 python -m venv ./venv
 ```
 
@@ -15,24 +15,32 @@ python -m venv ./venv
 source ./venv/bin/activate
 ```
 ### Install ansible
-```
+```sh
 pip install ansible
 ```
 
 ### Vagrant get Id
-```
+```sh
 vagrant global-status --prune
 ```
-### Vagrant destroy
+### Vagrant create VM's
+```sh
+vagrant up
 ```
+```sh
+sh ./up.sh
+```
+### Vagrant destroy
+```sh
 vagrant destroy {id}
 ```
-### Vagrant list the box
 ```
+sh ./destory.sh  
+```
+### Vagrant list the box
+```sh
 vagrant box list
 ```
-
-
 
 ### Ansible Adhoc command
 ```
