@@ -27,3 +27,18 @@ vagrant global-status --prune
 ```
 vagrant destroy {id}
 ```
+### Vagrant list the box
+```
+vagrant box list
+```
+
+
+
+### Ansible Adhoc command
+```
+ansible app -i ./inventory -a "whoami"
+```
+### Ansible using module
+```
+ansible app -i ./inventory -m ping  
+```
