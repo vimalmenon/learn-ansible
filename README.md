@@ -66,3 +66,13 @@ ssh -o StrictHostKeyChecking=no vagrant@192.168.33.10 -i ${key}
 ```sh
 ansible-playbook ./examples/Playbook1/simple.play.yml -i inventory -v
 ```
+
+### Checking syntax for simple Playbook file in example Playbook1
+```sh
+ansible-playbook ./examples/Playbook1/simple.play.yml -i inventory --syntax-check
+```
+
+### Encrypt var files
+```sh
+ansible-vault encrypt <file-path>
+```

@@ -2,11 +2,12 @@
 - name: This is simple yaml
   hosts: app
   tasks:
-    - name : Who Am I
-      command: whoami
+    - name: Who Am I
+      ansible.builtin.command: whoami
 - name: This is second yaml
   ignore_errors: true
   hosts: app
   tasks:
     - name: Testing module command
-      ping:
+      ansible.builtin.ping:
+      changed_when: false
