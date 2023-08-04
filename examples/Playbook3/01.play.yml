@@ -2,4 +2,7 @@
   - name: Pre Test
     hosts: app
     become: true
+    handles:
+      
+    pre-tasks: []
     tasks: []

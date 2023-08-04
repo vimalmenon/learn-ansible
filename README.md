@@ -76,3 +76,18 @@ ansible-playbook ./examples/Playbook1/simple.play.yml -i inventory --syntax-chec
 ```sh
 ansible-vault encrypt <file-path>
 ```
+
+- Modules
+  - Copy
+  - Ping
+  - yum
+  - command
+  - Package
+  - lineinfile
+  - fetch
+  - url
+  - zip
+  - user
+- roles
+
+  
