@@ -5,24 +5,24 @@
   - VirtualBox installed
   - Vagrant
 
-- Modules
+### Modules
   - [x] Copy
   - [x] Ping
-  - yum
   - [x] Command
-  - Package
-  - lineinfile
-  - fetch
-  - url
+  - [x] Package
+    - yum
+    - apt
+  - [x] lineinfile
+  - Fetch
+  - [x] Url
   - zip
   - user
-- roles
-- collection
+  - Git
+- Roles
+- Collection
 - [x] post_tasks
 - [x] pre_tasks
 - [x] handlers
-
-[VM Images](https://app.vagrantup.com/boxes/search?utf8=%E2%9C%93&sort=downloads&provider=)
 
 ### Create VirtualEnv
 ```sh
@@ -102,3 +102,5 @@ ansible-playbook ./examples/Playbook2/01.play.yml -i inventory --syntax-check
 ansible-playbook ./examples/Playbook3/01.play.yml -i inventory --syntax-check
 ```
   
+### Reference
+[VM Images](https://app.vagrantup.com/boxes/search?utf8=%E2%9C%93&sort=downloads&provider=)
