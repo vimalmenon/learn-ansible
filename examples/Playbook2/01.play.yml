@@ -3,6 +3,12 @@
   hosts: app
   become: true
 
+  vars:
+    files:
+      - testing1.txt
+      - testing2.txt
+      - testing3.txt
+
   tasks:
     - name: apt install
       yum:
@@ -10,8 +16,10 @@
         state: present
       with_items:
         - httpd
-    - name: debug
-      debug:
-        msg: "testing {{ item }}"
-      with_items:
-        - httpd
+    - name: copy files
+      copy:
+        src: "{{ item }}"
+        dest: "/home/vagrant/{{ item }}"
+        mode: '0644'
+      with_items: "{{ files }}"
+
