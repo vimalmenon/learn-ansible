@@ -31,6 +31,11 @@
         state: present
       with_items: "{{ files }}"
 
+    - name: debug files
+      debug:
+        msg: "{{ ansible_facts['hostname'] }}"
+      when: ansible_facts['hostname'] == "app3"
+
     - name: Remove file (delete file)
       file:
         path: "{{ item }}"
