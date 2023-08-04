@@ -10,19 +10,19 @@
   - [x] Ping
   - [x] Command
   - [x] Package
-    - yum
-    - apt
+    - [ ] yum, apt
   - [x] lineinfile
-  - Fetch
+  - [ ] Fetch
   - [x] Url
-  - zip
-  - user
-  - Git
-- Roles
-- Collection
+  - [ ] zip
+  - [ ] user
+  - [ ] Git
+- [ ] Roles
+- [ ] Collection
 - [x] post_tasks
 - [x] pre_tasks
 - [x] handlers
+- [ ] Assert
 
 ### Create VirtualEnv
 ```sh
