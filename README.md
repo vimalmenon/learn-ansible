@@ -5,6 +5,23 @@
   - VirtualBox installed
   - Vagrant
 
+- Modules
+  - [x] Copy
+  - [x] Ping
+  - yum
+  - [x] Command
+  - Package
+  - lineinfile
+  - fetch
+  - url
+  - zip
+  - user
+- roles
+- collection
+- [x] post_tasks
+- [x] pre_tasks
+- [x] handlers
+
 [VM Images](https://app.vagrantup.com/boxes/search?utf8=%E2%9C%93&sort=downloads&provider=)
 
 ### Create VirtualEnv
@@ -77,17 +94,11 @@ ansible-playbook ./examples/Playbook1/simple.play.yml -i inventory --syntax-chec
 ansible-vault encrypt <file-path>
 ```
 
-- Modules
-  - Copy
-  - Ping
-  - yum
-  - command
-  - Package
-  - lineinfile
-  - fetch
-  - url
-  - zip
-  - user
-- roles
-
+### Playbook sample
+```sh
+ansible-playbook ./examples/Playbook2/01.play.yml -i inventory --syntax-check
+```
+```sh
+ansible-playbook ./examples/Playbook3/01.play.yml -i inventory --syntax-check
+```
   
