@@ -23,6 +23,10 @@
 - [x] pre_tasks
 - [x] handlers
 - [ ] Assert
+- [ ] Module
+- [ ] Rescue
+- [ ] Register
+- [x] Ignore Errors
 
 ### Create VirtualEnv
 ```sh
@@ -94,6 +98,11 @@ ansible-playbook ./examples/Playbook1/simple.play.yml -i inventory --syntax-chec
 ansible-vault encrypt <file-path>
 ```
 
+
+### Ansbile galaxy collection
+```sh
+ansible-galaxy collection init local.colors
+```
 ### Playbook sample
 ```sh
 ansible-playbook ./examples/Playbook2/01.play.yml -i inventory --syntax-check
@@ -101,6 +110,8 @@ ansible-playbook ./examples/Playbook2/01.play.yml -i inventory --syntax-check
 ```sh
 ansible-playbook ./examples/Playbook3/01.play.yml -i inventory --syntax-check
 ```
+
+
   
 ### Reference
 [VM Images](https://app.vagrantup.com/boxes/search?utf8=%E2%9C%93&sort=downloads&provider=)
