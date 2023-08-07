@@ -1,0 +1,6 @@
+---
+- name: Testing roles
+  hosts: app
+  become: true
+  roles:
+    - test_role

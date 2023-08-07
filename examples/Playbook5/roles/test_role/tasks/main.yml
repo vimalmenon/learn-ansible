@@ -1,0 +1,11 @@
+---
+- name: Testing of roles
+  tags: test, roles
+  ping:
+
+- name: Copy of files
+  tags: test, roles
+  copy:
+    src: test.txt
+    dest: "/home/vagrant/test.txt"
+    mode: '0644'
