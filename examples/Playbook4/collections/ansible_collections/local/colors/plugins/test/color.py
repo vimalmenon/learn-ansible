@@ -1,6 +1,6 @@
 
 def check_colors(value):
-    return True if value == "red" else False
+    return True
 
 
 class TestModule(object):
