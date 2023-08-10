@@ -5,10 +5,9 @@
   vars:
     color: "REd"
   tasks:
-    - name: assert Value
-      assert:
-        that: color is local.colors.color
-        fail_msg: "'color' is not red"
-        success_msg: "'color' is red"
-      ignore_errors: true
-        
+  - name: assert Value
+    assert:
+      that: color is local.colors.color
+      fail_msg: "'color' is not red"
+      success_msg: "'color' is red"
+    ignore_errors: true
