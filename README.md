@@ -115,3 +115,7 @@ ansible-playbook ./examples/Playbook3/01.play.yml -i inventory --syntax-check
   
 ### Reference
 [VM Images](https://app.vagrantup.com/boxes/search?utf8=%E2%9C%93&sort=downloads&provider=)
+
+https://www.youtube.com/watch?v=fwrpM7Svfwk
+https://www.youtube.com/watch?v=DAnMyBZ8-Qs
+https://www.youtube.com/watch?v=tcP_gxOo7mk
