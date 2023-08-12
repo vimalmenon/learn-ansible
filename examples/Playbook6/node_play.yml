@@ -1,0 +1,19 @@
+---
+- name: This is NodeJs
+  hosts: app
+  become: true
+  tasks:
+    # - name: Installing NodeJS
+    #   yum:
+    #     name: nodejs-18.*
+    #     update_cache: yes
+    #     state: present
+    - name: Update cache
+      yum:
+        name: 
+          - epel-release
+          - nodejs
+        update_cache: true
+        state: present
+    - name: search Nodejs
+      command: node --version
